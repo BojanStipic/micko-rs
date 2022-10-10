@@ -3,7 +3,7 @@ use chumsky::{
     error::{Simple, SimpleReason},
     Parser, Stream,
 };
-use clap::StructOpt;
+use clap::Parser as ClapParser;
 
 use crate::ast::Program;
 
@@ -11,10 +11,10 @@ mod ast;
 mod lexer;
 mod parser;
 
-#[derive(clap::Parser, Debug)]
-#[clap(author, version, about, long_about = None)]
+#[derive(ClapParser, Debug)]
+#[command(author, version, about, long_about = None)]
 struct Cli {
-    /// miniC file path
+    /// miniC source file
     input: String,
 }
 
