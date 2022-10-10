@@ -46,15 +46,14 @@ cargo install --path .
 ## Usage
 
 ```
-USAGE:
-    micko-rs <INPUT>
+Usage: micko-rs <INPUT>
 
-ARGS:
-    <INPUT>    miniC file path
+Arguments:
+    <INPUT>  miniC source file
 
-OPTIONS:
-    -h, --help       Print help information
-    -V, --version    Print version information
+Options:
+    -h, --help     Print help information
+    -V, --version  Print version information
 ```
 
 ## License
