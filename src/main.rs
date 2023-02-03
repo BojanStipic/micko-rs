@@ -28,7 +28,7 @@ fn main() {
             let token_stream = Stream::from_iter(len..len + 1, tokens.into_iter());
 
             match Program::parser().parse(token_stream) {
-                Ok(ast) => println!("{:#?}", ast),
+                Ok(ast) => println!("{ast:#?}"),
                 Err(errs) => report_errors(
                     &src,
                     errs.into_iter()

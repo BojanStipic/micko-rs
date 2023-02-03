@@ -68,9 +68,9 @@ impl Display for Token {
                 Type::Int => write!(f, "int"),
                 Type::Unsigned => write!(f, "unsigned"),
             },
-            Self::Ident(x) => write!(f, "{}", x),
-            Self::IntNum(x) => write!(f, "{}", x),
-            Self::UintNum(x) => write!(f, "{}", x),
+            Self::Ident(x) => write!(f, "{x}"),
+            Self::IntNum(x) => write!(f, "{x}"),
+            Self::UintNum(x) => write!(f, "{x}"),
             Self::Ctrl(x) => match x {
                 Ctrl::LParen => write!(f, "("),
                 Ctrl::RParen => write!(f, ")"),
