@@ -7,4 +7,4 @@ description = "miniC compiler implemented in Rust"
 [dependencies]
 chumsky = "0.9.3"
 ariadne = "0.4.1"
-clap = { version = "4.5.18", features = ["derive", "wrap_help"] }
+clap = { version = "4.5.19", features = ["derive", "wrap_help"] }
