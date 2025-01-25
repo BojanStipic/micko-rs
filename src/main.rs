@@ -49,7 +49,7 @@ fn main() {
 
 fn report_errors(src: &str, errs: Vec<Simple<String>>) {
     for err in errs {
-        let report = Report::build(ReportKind::Error, (), err.span().start);
+        let report = Report::build(ReportKind::Error, err.span());
 
         let report = match err.reason() {
             SimpleReason::Unclosed { span, delimiter } => report
