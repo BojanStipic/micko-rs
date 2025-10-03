@@ -5,6 +5,6 @@ edition = "2021"
 description = "miniC compiler implemented in Rust"
 
 [dependencies]
-chumsky = "0.9.3"
-ariadne = "0.5.0"
-clap = { version = "4.5.31", features = ["derive", "wrap_help"] }
+chumsky = "0.11.1"
+ariadne = "0.5.1"
+clap = { version = "4.5.48", features = ["derive", "wrap_help"] }
